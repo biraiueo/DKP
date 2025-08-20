@@ -17,7 +17,7 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.2'
-          tools: php-cs
+          tools: phpcs
 
-      - name: Run php-cs
-        run: php-cs --report-source --report-full .
+      - name: Run phpcs
+        run: phpcs --report-full --standard=PSR2 .
